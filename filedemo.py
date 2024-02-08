@@ -13,7 +13,13 @@ or the file handle will be filled up and no more files could be accessed."""
 
 """ 'w' mode deletes the previous entry from the files.
 To add new data to the existing file use append mode."""
+# f = open("another_file.txt", "w")
+# f.write("Hello This is a new file!")
+# f.close()
 
-f = open("another_file.txt", "w")
-f.write("Hello This is a new file!")
-f.close()
+""" using with automatically closes file if one forgets to close a file. i.e. 
+the file is closed after the intended block of code is executed.
+The con here is that 'f' here is a local scope. but we can utilize the file_data variable"""
+with open("another_file.txt", "r") as f:
+    file_data = f.read()
+print(file_data)
