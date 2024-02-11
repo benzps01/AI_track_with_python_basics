@@ -27,3 +27,15 @@ new_shirt.change_price(10)
 print(new_shirt.price)
 
 print(new_shirt.discount(0.2))
+
+tshirt_collection = []
+shirt_one = Shirt("orange", "M", "short_sleeve", 25)
+shirt_two = Shirt("red", "S", "short_sleeve", 15)
+shirt_three = Shirt("purple", "XL", "short_sleeve", 10)
+
+tshirt_collection.append(shirt_one)
+tshirt_collection.append(shirt_two)
+tshirt_collection.append(shirt_three)
+
+for i in range(len(tshirt_collection)):
+    print(tshirt_collection[i].color)
