@@ -33,3 +33,14 @@ The word self is just a convention. You could actually use any other name as lon
 you are consistent; however, you should always use self rather than some other word 
 or else you might confuse people.
 
+
+Magic Methods/Dunder methods
+
+add : overrides the default behavior of the + symbol
+In the example in the video, we define exactly what is meant by add Gaussian distributions
+repr : overrides the default behavior of printing variables
+
+In the example in the video, we define what is printed when we print a 
+Gaussian distributions 
+
+Python allows you to override several default methods, these are all called Magic Methods
