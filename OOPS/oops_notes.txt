@@ -44,3 +44,16 @@ In the example in the video, we define what is printed when we print a
 Gaussian distributions 
 
 Python allows you to override several default methods, these are all called Magic Methods
+
+####
+A Python package does not need to use object-oriented programming. 
+You could simply have a Python module with a set of functions. 
+However, most if not all of the popular Python packages take advantage of 
+object-oriented programming for a few reasons:
+
+1. Object-oriented programs are relatively easy to expand especially because of 
+inheritance
+
+2. Object-oriented programs obscure functionality from the user. 
+Consider scipy packages. You don't need to know how the actual code works 
+in order to use its classes and methods.
